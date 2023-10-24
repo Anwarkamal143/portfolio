@@ -64,6 +64,7 @@ export const projectsData = [
       where Users can purchase specific AI-generated images or content on the Site.`,
     tags: ["React", "Typescript", "Zustand", "stripe"],
     imageUrl: onlyclonesImg,
+    url: "https://www.onlyclones.com",
   },
   {
     title: "SelfiePop",
@@ -78,12 +79,14 @@ members-only content that their superfans want to see!`,
       "Framer Motion",
     ],
     imageUrl: selfiepopImg,
+    url: "https://www.selfiepop.com",
   },
   {
     title: "Cars Hub",
     description: `I build this project from scratch on Next js using both server and client components.`,
     tags: ["React", "TypeScript", "Next js", "Tailwindcss"],
     imageUrl: carshub,
+    url: "https://car-r6d65k26h-anwarkamal143.vercel.app",
   },
   // {
   //   title: "Word Analytics",

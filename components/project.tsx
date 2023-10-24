@@ -1,9 +1,9 @@
 "use client";
 
-import { useRef } from "react";
 import { projectsData } from "@/lib/data";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import { useRef } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +12,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  url,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -23,10 +24,14 @@ export default function Project({
 
   return (
     <motion.div
+      onClick={() => {
+        url && window.open(url, "_blank");
+      }}
       ref={ref}
       style={{
         scale: scaleProgess,
         opacity: opacityProgess,
+        cursor: url ? "pointer" : "default",
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
