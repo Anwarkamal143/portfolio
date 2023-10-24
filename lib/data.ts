@@ -1,3 +1,4 @@
+import carshub from "@/public/images/projects/carshub.png";
 import onlyclonesImg from "@/public/images/projects/onlyclones.png";
 import selfiepopImg from "@/public/images/projects/selfiepop.png";
 import React from "react";
@@ -77,6 +78,12 @@ members-only content that their superfans want to see!`,
       "Framer Motion",
     ],
     imageUrl: selfiepopImg,
+  },
+  {
+    title: "Cars Hub",
+    description: `I build this project from scratch on Next js using both server and client components.`,
+    tags: ["React", "TypeScript", "Next js", "Tailwindcss"],
+    imageUrl: carshub,
   },
   // {
   //   title: "Word Analytics",
